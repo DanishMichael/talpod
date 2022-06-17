@@ -1,0 +1,20 @@
+##Instructions for running the application
+
+Assuming that you have Java and Maven installed
+
+1) run mvn clean install
+2) go to the target directory
+3) run java -jar danish-talpod-0.0.1-SNAPSHOT.jar
+4) use postman or any other REST tool to send request to api at http://localhost:8080/createItinerary
+5) attached is a sample json file for the request structure
+6) output is the same json but sorted by source/destination using Euclidean algorithm.
+
+
+Note : The solution can be improved upon in terms of unit tests and documentation and maybe some code cleaning.
+Due to the nature of the problem and limited time I chose to focus more on handling the actual 
+problem rather than writing proper documentation and unit tests.
+
+Assumptions:
+I have assumed that if there would always be an ordered unbroken list in the input.
+If that is not the case then the output would be empty. Also assuming that the input would always
+have a Euclidean path.
